@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 20px;
+}
+
+#new-grid-button, #container {
+    display: block;
+    margin: 40px auto;
+}
+
+#new-grid-button {
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#new-grid-button:hover {
+    cursor: pointer;
+}
+
+#container {
+    width: 1080px;
+    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    max-width: 100%;
+    display: flex;
+}
+
+.column {
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
+
+.column.on-mouse-overed {
+    background-color: pink;
+}
